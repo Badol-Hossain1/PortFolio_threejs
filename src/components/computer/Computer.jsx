@@ -13,6 +13,7 @@ export function Computer(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/models/scene.glb')
   const { actions } = useAnimations(animations, group)
+  console.log("🚀 ~ Computer ~ actions:", actions)
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
